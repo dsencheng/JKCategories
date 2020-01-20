@@ -17,7 +17,6 @@
 #import <JKCategories/NSData+JKHash.h>
 #import <JKCategories/NSData+JKzlib.h>
 #import <JKCategories/NSData+JKPCM.h>
-#import <JKCategories/NSDate+JKCupertinoYankee.h>
 #import <JKCategories/NSDate+JKExtension.h>
 #import <JKCategories/NSDate+JKFormatter.h>
 #import <JKCategories/NSDate+JKInternetDateTime.h>
@@ -31,7 +30,6 @@
 #import <JKCategories/NSDictionary+JKJSONString.h>
 #import <JKCategories/NSDictionary+JKMerge.h>
 #import <JKCategories/NSDictionary+JKSafeAccess.h>
-#import <JKCategories/NSDictionary+JKURL.h>
 #import <JKCategories/NSDictionary+JKXML.h>
 #import <JKCategories/NSException+JKTrace.h>
 #import <JKCategories/NSFileHandle+JKReadLine.h>
@@ -98,7 +96,6 @@
 #import "NSData+JKHash.h"
 #import "NSData+JKzlib.h"
 #import "NSData+JKPCM.h"
-#import "NSDate+JKCupertinoYankee.h"
 #import "NSDate+JKExtension.h"
 #import "NSDate+JKFormatter.h"
 #import "NSDate+JKInternetDateTime.h"
@@ -112,7 +109,6 @@
 #import "NSDictionary+JKJSONString.h"
 #import "NSDictionary+JKMerge.h"
 #import "NSDictionary+JKSafeAccess.h"
-#import "NSDictionary+JKURL.h"
 #import "NSDictionary+JKXML.h"
 #import "NSException+JKTrace.h"
 #import "NSFileHandle+JKReadLine.h"

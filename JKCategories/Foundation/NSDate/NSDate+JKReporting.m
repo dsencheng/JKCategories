@@ -73,24 +73,6 @@
 #endif
 }
 
-
-+ (NSDate *)jk_dateWithYear:(int)year month:(int)month day:(int)day {
-    NSDateComponents *components = [[NSDateComponents alloc] init];
-    
-    // Assign the year, month and day components.
-    [components setYear:year];
-    [components setMonth:month];
-    [components setDay:day];
-    
-    // Zero out the hour, minute and second components.
-    [self jk_zeroOutTimeComponents:&components];
-    
-    // Generate a valid NSDate and return it.
-    NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
-    return [gregorianCalendar dateFromComponents:components];
-}
-
-
 + (NSDate *)jk_midnightOfDate:(NSDate *)date {
     NSCalendar *gregorianCalendar = [[self class] jk_gregorianCalendar_factory];
 
