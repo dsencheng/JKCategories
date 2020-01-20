@@ -226,7 +226,6 @@
 		B81024C8206A0FFD0099CDA8 /* NSURL+JKParam.h in Headers */ = {isa = PBXBuildFile; fileRef = A2FD5B5E1A52708900555EA2 /* NSURL+JKParam.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B81024C9206A0FFD0099CDA8 /* NSFileManager+JKPaths.h in Headers */ = {isa = PBXBuildFile; fileRef = A2FD5B4D1A52693600555EA2 /* NSFileManager+JKPaths.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B81024CA206A0FFE0099CDA8 /* NSException+JKTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = A2FD5B491A52687000555EA2 /* NSException+JKTrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B81024CB206A0FFE0099CDA8 /* NSDate+JKUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = A2FD5B611A52718200555EA2 /* NSDate+JKUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B81024CC206A0FFE0099CDA8 /* NSDate+JKExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = A284C14B1AEBD39600D90ED5 /* NSDate+JKExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B81024CD206A0FFE0099CDA8 /* NSDate+JKReporting.h in Headers */ = {isa = PBXBuildFile; fileRef = A202D9601B0F6C4400EAB199 /* NSDate+JKReporting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B81024CE206A0FFE0099CDA8 /* NSDate+JKFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = A202D9A91B102F0F00EAB199 /* NSDate+JKFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -243,7 +242,6 @@
 		B81024D9206A100E0099CDA8 /* NSURL+JKParam.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B5F1A52708900555EA2 /* NSURL+JKParam.m */; };
 		B81024DA206A100E0099CDA8 /* NSFileManager+JKPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B4E1A52693600555EA2 /* NSFileManager+JKPaths.m */; };
 		B81024DB206A100E0099CDA8 /* NSException+JKTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B4A1A52687000555EA2 /* NSException+JKTrace.m */; };
-		B81024DC206A100E0099CDA8 /* NSDate+JKUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD5B621A52718200555EA2 /* NSDate+JKUtilities.m */; };
 		B81024DD206A100E0099CDA8 /* NSDate+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A284C14C1AEBD39600D90ED5 /* NSDate+JKExtension.m */; };
 		B81024DE206A100E0099CDA8 /* NSDate+JKReporting.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9611B0F6C4400EAB199 /* NSDate+JKReporting.m */; };
 		B81024DF206A100E0099CDA8 /* NSDate+JKFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9AA1B102F0F00EAB199 /* NSDate+JKFormatter.m */; };
@@ -1176,8 +1174,6 @@
 		A2FD5B5C1A52706F00555EA2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		A2FD5B5E1A52708900555EA2 /* NSURL+JKParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+JKParam.h"; sourceTree = "<group>"; };
 		A2FD5B5F1A52708900555EA2 /* NSURL+JKParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+JKParam.m"; sourceTree = "<group>"; };
-		A2FD5B611A52718200555EA2 /* NSDate+JKUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSDate+JKUtilities.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		A2FD5B621A52718200555EA2 /* NSDate+JKUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSDate+JKUtilities.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A2FF6FE51D04334F00320C36 /* NSData+JKPCM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSData+JKPCM.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		A2FF6FE61D04334F00320C36 /* NSData+JKPCM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSData+JKPCM.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		B8102479206A0DE90099CDA8 /* JKCategories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKCategories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1810,8 +1806,6 @@
 		A280E53E1A52449B00E6ACA2 /* NSDate */ = {
 			isa = PBXGroup;
 			children = (
-				A2FD5B611A52718200555EA2 /* NSDate+JKUtilities.h */,
-				A2FD5B621A52718200555EA2 /* NSDate+JKUtilities.m */,
 				A284C14B1AEBD39600D90ED5 /* NSDate+JKExtension.h */,
 				A284C14C1AEBD39600D90ED5 /* NSDate+JKExtension.m */,
 				A202D9601B0F6C4400EAB199 /* NSDate+JKReporting.h */,
@@ -3206,7 +3200,6 @@
 				B810258E206A10E70099CDA8 /* UITextView+JKInputLimit.h in Headers */,
 				B810260E206A118A0099CDA8 /* UIViewController+JKVisible.h in Headers */,
 				B81024C8206A0FFD0099CDA8 /* NSURL+JKParam.h in Headers */,
-				B81024CB206A0FFE0099CDA8 /* NSDate+JKUtilities.h in Headers */,
 				B8102514206A104F0099CDA8 /* NSString+JKContains.h in Headers */,
 				B8102589206A10E70099CDA8 /* UITextField+JKHistory.h in Headers */,
 				B81025BF206A11350099CDA8 /* UIImage+JKBetterFace.h in Headers */,
@@ -3629,7 +3622,6 @@
 				B810254C206A10940099CDA8 /* UISplitViewController+JKQuickAccess.m in Sources */,
 				B81025FD206A11720099CDA8 /* UIView+JKCustomBorder.m in Sources */,
 				B8102505206A10390099CDA8 /* NSDictionary+JKBlock.m in Sources */,
-				B81024DC206A100E0099CDA8 /* NSDate+JKUtilities.m in Sources */,
 				B81024C0206A0FDD0099CDA8 /* NSDecimalNumber+JKExtensions.m in Sources */,
 				B8102504206A10390099CDA8 /* NSDictionary+JKJSONString.m in Sources */,
 				B81025E3206A11470099CDA8 /* UILabel+JKSuggestSize.m in Sources */,

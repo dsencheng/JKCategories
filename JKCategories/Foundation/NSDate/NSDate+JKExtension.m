@@ -615,4 +615,45 @@
                                       toDate:fromDate
                                      options:0];
 }
+
+- (NSInteger)jk_distanceDaysToDate:(NSDate *)anotherDate
+{
+#if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_8_0
+    // NSDayCalendarUnit
+    NSCalendar *gregorian = [[NSCalendar alloc]
+                             initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+#else
+    NSCalendar *gregorian = [[NSCalendar alloc]
+                             initWithCalendarIdentifier:NSGregorianCalendar];
+#endif
+    NSDateComponents *components = [gregorian components:NSDayCalendarUnit fromDate:self toDate:anotherDate options:0];
+    return components.day;
+}
+- (NSInteger)jk_distanceMonthsToDate:(NSDate *)anotherDate{
+#if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_8_0
+    // NSDayCalendarUnit
+    NSCalendar *gregorian = [[NSCalendar alloc]
+                             initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+#else
+    NSCalendar *gregorian = [[NSCalendar alloc]
+                             initWithCalendarIdentifier:NSGregorianCalendar];
+#endif
+    NSDateComponents *components = [gregorian components:NSMonthCalendarUnit fromDate:self toDate:anotherDate options:0];
+
+    return components.month;
+}
+- (NSInteger)jk_distanceYearsToDate:(NSDate *)anotherDate{
+#if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_8_0
+    // NSDayCalendarUnit
+    NSCalendar *gregorian = [[NSCalendar alloc]
+                             initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+#else
+    NSCalendar *gregorian = [[NSCalendar alloc]
+                             initWithCalendarIdentifier:NSGregorianCalendar];
+#endif
+    NSDateComponents *components = [gregorian components:NSYearCalendarUnit fromDate:self toDate:anotherDate options:0];
+
+    return components.year;
+}
+
 @end

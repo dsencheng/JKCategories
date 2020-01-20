@@ -22,7 +22,6 @@
 #import <JKCategories/NSDate+JKFormatter.h>
 #import <JKCategories/NSDate+JKInternetDateTime.h>
 #import <JKCategories/NSDate+JKReporting.h>
-#import <JKCategories/NSDate+JKUtilities.h>
 #import <JKCategories/NSDate+JKZeroDate.h>
 #import <JKCategories/NSDate+JKLunarCalendar.h>
 #import <JKCategories/NSDateFormatter+JKMake.h>
@@ -104,7 +103,6 @@
 #import "NSDate+JKFormatter.h"
 #import "NSDate+JKInternetDateTime.h"
 #import "NSDate+JKReporting.h"
-#import "NSDate+JKUtilities.h"
 #import "NSDate+JKZeroDate.h"
 #import "NSDate+JKLunarCalendar.h"
 #import "NSDateFormatter+JKMake.h"

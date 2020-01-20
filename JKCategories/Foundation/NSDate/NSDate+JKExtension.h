@@ -222,4 +222,11 @@
 + (NSString *)jk_hmsFormat;
 + (NSString *)jk_ymdHmsFormat;
 
+///与anotherDate间隔几天
+- (NSInteger)jk_distanceDaysToDate:(NSDate *)anotherDate;
+///与anotherDate间隔几月
+- (NSInteger)jk_distanceMonthsToDate:(NSDate *)anotherDate;
+///与anotherDate间隔几年
+- (NSInteger)jk_distanceYearsToDate:(NSDate *)anotherDate;
+
 @end
